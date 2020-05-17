@@ -114,7 +114,7 @@ body {
 }
 
 /*Sections Header Style*/
-.design-element-png {
+.section-heading-picture {
   display: block;
   width: 78px;
   height: 58px;
@@ -139,19 +139,25 @@ body {
   font-size: 1.5rem;
   margin-bottom: 18px;
 }
+
+.section-header-bottom-line {
+  background-color: aqua;
+  height: 1px;
+  width: 150px;
+  border: none;
+}
 /*End Sections Header Style*/
 
 /*Section Servises Style*/
-.servises-content-block {
+.servises-content-blocks {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-right: 100px;
 }
 
-.servises-content {
+.services-content-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,35 +165,33 @@ body {
   max-width: 300px;
   margin-right: 20px;
   justify-content: center;
+  position: relative;
 }
 
-.servises-content:last-child {
+.services-content-block:last-child {
   margin-right: 0;
 }
 
-.servises-content .figure {
-  position: relative;
+.services-content-figure {
   margin-top: 50px;
 }
 
-.servises-content .icon {
+.services-content-icon {
   position: absolute;
-  margin-top: 8px; 
 }
 
-.grafic-design .icon {
+.services-content-graphic-design .services-content-icon {
   margin-left: 15px; 
 }
 
-.servises-content-title {
+.services-content-title {
   margin-top: 35px;
   color: #ffc501;
   font-size: 20px;
   line-height: 27px;
 }
 
-.servises-content-description {
-  height: 73px;
+.services-content-description {
   color: #a8b9c0;
   line-height: 3rem;
   text-align: center;
@@ -206,19 +210,7 @@ body {
     margin-bottom: 0;
   }
 
-  .servises-content-block {
+  .servises-content-blocks {
     flex-direction: row;
-  }
-
-  .grafic-design .servises-content-description {
-    text-align: left;
-  }
-  
-  .web-design .servises-content-description {
-    text-align: center;
-  }
-  
-  .app-design .servises-content-description {
-    text-align: right;
   }
 }
