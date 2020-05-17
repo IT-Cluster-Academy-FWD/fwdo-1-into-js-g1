@@ -3,9 +3,10 @@
   --color-button-main: #ff3150;
   --color-button-text: #ffc501;
   --color-font-h2:#1a2940;
+  --color-font-details: #00c6bf;
 }
 
-body, h2, h5, p {
+body, h2, h3, p {
   padding: 0;
   margin: 0;
 }
@@ -36,119 +37,129 @@ body {
   color: var(--color-button-main);
 }
 
-.container-3 {
+.container {
   max-width: 1175px;
   margin: 0 auto;
   padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.container-3-part-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.container-3-part-1 p {
-  width: 570px;
-  height: auto;
-  text-align: center;
-  margin-top: 25px;
-  color:var(--color-font-main) ;
-}
-
-.container-3-part-1 .image-composite-path {
+.about-us-logo {
   margin-top: 60px;
 }
 
-.container-3-part-1 h2 {
-  margin-top: 50px;
+.about-us-title {
   color: var(--color-font-h2);
+  margin-top: 50px;
 }
 
-.container-3-part-1 h5 {
-  margin: 20px 0;
+.about-us-subtitle {
+  margin-top: 20px;
+  color:var(--color-font-main);
+}
+
+.about-us-line {
+  width: 150px;
+  border: 1px solid var(--color-font-details);
+}
+
+.about-us-description {
+  max-width: 570px;
+  text-align: center;
+  margin-top: 10px;
   color:var(--color-font-main) ;
 }
 
-.container-3-part-2 {
+.about-us-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.container-3-part-2-left {
+.about-us-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.container-3-part-2-left h2 {
+.about-us-info-title {
   padding: 10px;
   color: var(--color-font-h2);
 }
 
-.container-3-part-2-left p {
+.about-us-info-p {
   text-align: start;
-  margin-top: 20px;
+  padding: 0px 10px;
   color:var(--color-font-main) ;
 }
 
-.container-3-part-2-left .container-3-part-2-button {
-  margin: 25px 0 0 2px;
+.about-us-button {
+  margin: 20px auto;
 }
 
-.container-3-part-2-right {
+.about-us-picture {
   display: flex;
   flex-direction: row;
   margin-top: 58px;
-}
-
-.container-3-part-2-right .image-macbook {
   position: relative;
-  width: 720px;
+}
+
+.about-us-picture .about-us-picture-macbook {
+  width: 360px;
   height: auto;
 }
 
-.container-3-part-2-right .image-screen {
+.about-us-picture .about-us-picture-screen {
   position: absolute;
-  margin: 25px 90px;
+  width: 270px;
+  top: 15px;
+  left: 45px;
   z-index: 2;
-  width: 540px;
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
-  .container-3-part-1 p {
-    width: 345px;
-    height: auto;
-  }
-
-  .container-3-part-2-left h2 {
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-
-  .container-3-part-2 {
-    flex-direction: column;
+  .about-us-content {
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
-  .container-3-part-2-left .container-3-part-2-button {
-    margin: 20px auto;
+  .about-us-info-p {
+    padding: 0px 10px;
   }
 
-  .container-3-part-2-right .image-macbook {
-    width: 360px;
+  .about-us-info .about-us-button {
+    margin: 25px 0 0 10px;
   }
 
-  .container-3-part-2-right .image-screen {
-    width: 270px;
-    margin: 12px 45px;
+  .about-us-picture .about-us-picture-macbook {
+    width: 550px;
+  }
+
+  .about-us-picture .about-us-picture-screen {
+    width: 420px;
+    top: 20px;
+    left: 65px;
   }
 
 } 
+
+@media screen and (min-width: 1050px) {
+
+  .about-us-picture .about-us-picture-macbook {
+    width: 720px;
+  }
+
+  .about-us-picture .about-us-picture-screen {
+    width: 560px;
+    top: 20px;
+    left: 80px;
+  }
+
+}
