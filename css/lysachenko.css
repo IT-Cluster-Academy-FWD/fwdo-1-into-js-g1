@@ -1,8 +1,8 @@
 :root {
   --color-body: #eff7fa;
-  --color-header-container-text: #f8c715;
-  --color-flex-container: #fff;
-  --color-flex-container-text: #32d1cc;
+  --color-header-title: #f8c715;
+  --color-team-member: #fff;
+  --color-team-member-title: #32d1cc;
   --color-footer: #fff;
 }
 
@@ -15,69 +15,83 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.header-container {
+.header {
   text-align: center;
   margin-top: 110px;
 }
 
-.header-container-title {
-  color: var(--color-header-container-text);
+.header-title {
+  color: var(--color-header-title);
 }
 
-.header-container-text {
+.header-text {
   margin-top: 30px;
   opacity: 0.5;
 }
 
-.main {
+.team {
   display: flex;
   flex-flow: wrap;
-  margin-left: 100px;
+  justify-content: center;
 }
 
-.flex-container {
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.team-member {
   width: 270px;
-  height: 400px;
-  background-color: var(--color-flex-container);
+  height: 400px; 
+  background-color: var(--color-team-member);
   margin: 5px 10px 10px 10px;
   border: solid 1px white;
   text-align: center;
   margin-top: 60px;
-  flex-direction: column;
 }
 
-.flex-container-text {
-  width: 270px;
-  height: 50px;
+.team-member-title {
+  padding: 15px; 
   border: solid 1px white;
   color: white;
-  background-color: var(--color-flex-container-text);
+  background-color: var(--color-team-member-title);
   margin-top: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container-text {
+.team-member-description {
   margin-top: 35px;
   opacity: 0.5;
 }
 
 .footer {
   background-color: var(--color-footer);
-  height: 180px;
-  width: 2000px;
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
+  flex-direction: column;
 }
 
 .image-footer {
   text-align: center;
-  margin-top: 60px;
-  padding-left: 135px;
+  margin-top: 20px;
+  padding-left: 100px;
+  margin-bottom: 20px;
+  padding: 50px;
 }
 
-@media screen and (min-width 768px) {
-  .flex-container {
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .footer {
     flex-direction: row;
   }
 }
